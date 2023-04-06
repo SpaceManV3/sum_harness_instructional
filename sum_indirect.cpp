@@ -21,14 +21,14 @@ setup(int64_t N, uint64_t A[])
 int64_t
 sum(int64_t N, uint64_t A[])
 {
-   int sum = 0;
-   int indx = A[0];
+   uint64_t sum = 0;
+   uint64_t indx = A[0];
    for(int i = 0; i < N; i++){
       sum += A[indx];
       indx = A[indx];
    }
    printf(" inside sum_indirect perform_sum, N=%lld \n", N);
 
-   return 0;
+   return sum;
 }
 
