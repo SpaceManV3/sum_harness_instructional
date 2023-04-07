@@ -36,7 +36,7 @@ code1_time = df[var_names[1]].values.tolist()
 code2_time = df[var_names[2]].values.tolist()
 code3_time = df[var_names[3]].values.tolist()
 
-plt.title("Comparison of 3 Codes")
+plt.title("Memory latency of Three Sum Methods")
 
 xlocs = [i for i in range(len(problem_sizes))]
 
@@ -50,7 +50,7 @@ plt.plot(code3_time, "g-^")
 #plt.yscale("log")
 
 plt.xlabel("Problem Sizes")
-plt.ylabel("runtime")
+plt.ylabel("Memory latency x 10^-10")
 
 varNames = [var_names[1], var_names[2], var_names[3]]
 plt.legend(varNames, loc="best")
