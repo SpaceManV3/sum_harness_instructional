@@ -21,7 +21,8 @@ sum(int64_t N, uint64_t A[])
    for(int i = 0; i < N; i++){
       sum += i;
    }
-   printf(" inside direct_sum perform_sum, N=%lld \n", N);
+   // Commented out to avoid unnecessary memory accesses
+   // printf(" inside direct_sum perform_sum, N=%lld \n", N);
 
    return sum;
 }

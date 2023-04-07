@@ -27,7 +27,8 @@ sum(int64_t N, uint64_t A[])
       sum += A[indx];
       indx = A[indx];
    }
-   printf(" inside sum_indirect perform_sum, N=%lld \n", N);
+   // Commented out to avoid unnecessary memory accesses
+   // printf(" inside sum_indirect perform_sum, N=%lld \n", N);
 
    return sum;
 }

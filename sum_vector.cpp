@@ -24,7 +24,8 @@ sum(int64_t N, uint64_t A[])
    for(int i = 0; i < N; i++){
       sum += A[i];
    }
-   printf(" inside sum_vector perform_sum, N=%lld \n", N);
+   // Commented out to avoid unnecessary memory accesses
+   // printf(" inside sum_vector perform_sum, N=%lld \n", N);
 
    return sum;
 }
